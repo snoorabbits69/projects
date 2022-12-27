@@ -150,11 +150,3 @@ display:none;
     display:flex;
     flex-direction:column;
 }
-.luffy{
-    display: inline-block;
-    position: relative;
-    top:400px;
-   left:150px;
- box-sizing: border-box;
- 
-}
