@@ -1,6 +1,7 @@
 @media screen and (max-width:420px){
     *{
         box-sizing: border-box;
+        margin:0;
     }
     #firstnavbar{
         display:none;
@@ -10,12 +11,18 @@
         display:none;
     }
     
-    #secondbar:not(#search){
-       display:none;
+    #secondbar{
+       display: none;
+       
     }
-    #search{
-display:inline;
-float:left:
+   #back{
+    height:auto;
+    width:420px;
+    position:relative;
+    top:-10px;
+    box-sizing: border-box;
+    
+   
+   }
 
-    }
     }
