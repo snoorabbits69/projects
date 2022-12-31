@@ -1,0 +1,14 @@
+@media screen and (max-width:420px){
+    
+    #firstnavbar{
+        display:none;
+        visibility: hidden;
+    }
+    #scrollbar{
+        display:none;
+    }
+    
+    #secondbar{
+        display:none;
+    }
+    }
