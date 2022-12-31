@@ -1,5 +1,7 @@
 @media screen and (max-width:420px){
-    
+    *{
+        box-sizing: border-box;
+    }
     #firstnavbar{
         display:none;
         visibility: hidden;
@@ -8,7 +10,12 @@
         display:none;
     }
     
-    #secondbar{
-        display:none;
+    #secondbar:not(#search){
+       display:none;
+    }
+    #search{
+display:inline;
+float:left:
+
     }
     }
