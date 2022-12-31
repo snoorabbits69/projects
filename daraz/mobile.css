@@ -5,7 +5,7 @@
     }
     #firstnavbar{
         display:none;
-        visibility: hidden;
+      
     }
     #scrollbar{
         display:none;
@@ -16,13 +16,13 @@
        
     }
    #back{
-    height:auto;
-    width:420px;
+    height:250px;
+    width:412px;
     position:relative;
-    top:-10px;
+    top:-20px;
     box-sizing: border-box;
-    
-   
    }
-
+#search{
+display:inline;
+}
     }
