@@ -35,11 +35,13 @@ height:40px;
 #bot{
     display:grid;
     grid-template-columns: repeat(4,auto);
-  
-    position:fixed;
+  grid-template-rows: repeat(2,20px);
+  row-gap: 10px;  
+  height:auto;
+  position:fixed;
     width:500px;
  padding-left:20px;
-    top:960px;
+   top:auto;
    border-top-style: solid;
 border-color: grey;
 padding-top:5px;
