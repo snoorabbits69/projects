@@ -1,4 +1,4 @@
-@media screen and (max-width:420px){
+@media screen and (max-width:500px){
     *{
         box-sizing: border-box;
         margin:0;
@@ -17,7 +17,7 @@
     }
    #back{
     height:250px;
-    width:412px;
+    width:460px;
     position:absolute;
     top:-20px;
     box-sizing: border-box;
@@ -28,13 +28,38 @@ position:sticky;
 padding-left:40px;
 top:0px;
 left:20px;
-font-weight:500px;
-width:300px;
+
+width:350px;
 height:40px;
+}
+#bot{
+    display:grid;
+    grid-template-columns: repeat(4,auto);
+  
+    position:fixed;
+    width:500px;
+ padding-left:20px;
+    top:960px;
+   border-top-style: solid;
+border-color: grey;
+padding-top:5px;
+border-width: 1px;
+    background-color:white;
+transition:0.2s;
+}
+#bot>span:hover {
+    color:orangered;
 }
 
     }
+.bottom{
+    position:relative;
+    bottom:40px;
+   
+ 
+   display:none;
 
+}
 
     .sirch{
         display: none;
