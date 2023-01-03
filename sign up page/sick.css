@@ -5,23 +5,17 @@
     box-sizing: border-box;
 }
 body{
-    background-color: aqua;
-    animation: king 3s ease-in infinite;
+    background-image:url("bg.png");
+    background-repeat:no-repeat;
+  background-size:cover;
 }
-@keyframes king{
-    0%{background-color:aqua;}
-    20%{background-color:rgb(8, 107, 107);}
-    40%{background-color:rgb(0, 38, 255);}
-    60%{background-color:rgb(247, 0, 255);}
-    80%{background-color:rgb(125, 214, 22);}
-    100%{background-color:rgb(32, 221, 89);}
-}
+
 .tingle{
    display:inline-grid;
 grid-template-rows: auto auto auto;
 row-gap: 20px;
 
-    background-color:white;
+    background-color:rgb(255, 255, 255,0.1);
    width:autopx;
   
 padding-top: 10px;
@@ -39,12 +33,13 @@ left:35%;
 .first{
     width:300px;
     height:50px;
-    border-style:outset;
-   border-width:0.5px;
-   border-radius: 10px;
+
+   
 text-align: center;
 outline-width: 0.1px;
  outline-color:rgb(49, 167, 223);
+ border-style: groove;
+ border-radius: 50px;
  transition:width 2s;
 }
 .first:focus{
@@ -69,7 +64,7 @@ transition:height 100ms,width 100ms;
 .line{
     height:1px;
     width:300px;
-    background-color:black;
+    background-color:rgb(255, 255, 255);
     opacity:0.2;
 }
 .fourth{
