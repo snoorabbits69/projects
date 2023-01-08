@@ -4,9 +4,10 @@
 	padding:0;
 	border:0;
     box-sizing:border-box;
-    
+
 
 }
+
 
 
 .head{
@@ -72,7 +73,7 @@ margin-bottom:10px;
     width:100%;
     height:400px;
     position:absolute;
-    z-index: -1;
+   
 
 }
 .first{
@@ -80,7 +81,7 @@ margin-bottom:10px;
     
     display:inline-grid;
     font-size:12px;
-position: absolute;
+position: relative;
    padding-top:15px;
     width:200px;
    padding-left:20px;
@@ -152,4 +153,16 @@ display:none;
 .drop>div:hover .drop1{
     display:flex;
     flex-direction:column;
+}
+.roundnav{
+    display:flex;
+    position: absolute;
+    
+   
+   
+}
+.roundnav:nth-child(n){
+background-color: white;
+margin-left: 300px;
+
 }
