@@ -1,0 +1,23 @@
+.clock{
+display:grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: brown;
+  width:480px;
+  height:300px;
+  padding-left:15px;
+margin:auto;
+  margin-top:100px;
+  border-radius:200px;
+}
+.design{
+  color:white;
+  background-color: black;
+  width:100px;
+  height:100px;
+  text-align: center;
+  padding-top:50px;
+  font-size:50px;
+  position:relative;
+  top:80px;
+    border-radius:50px;
+}
