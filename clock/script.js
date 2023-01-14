@@ -6,7 +6,12 @@ setInterval(function(){
   else{
      document.getElementById("hours").innerHTML=b.getHours();
   }
+  if(b.getMinutes>9){
    document.getElementById("min").innerHTML=b.getMinutes();
+  }
+  else{
+   document.getElementById("min").innerHTML="0"+b.getMinutes();
+  }
   document.getElementById("sec").innerHTML=b.getSeconds();
  if(b.getHours()>=12){
  document.getElementById("zone").innerHTML="PM";
