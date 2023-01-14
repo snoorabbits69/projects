@@ -160,15 +160,29 @@ display:none;
     display:flex;
     flex-direction:column;
 }
+/*for the icons and the rounded groups*/
 .roundnav{
-    display:flex;
+    display:grid;
+    grid-template-columns: repeat(6,auto);
+    column-gap: 20px;
     position: absolute;
+    margin-left: 40px;
+
+    }
+    .roundnav span{
+        font-weight: bold;
+        position:relative;
+        top:-6px;
+        font-size: 20px;
+        font-family: Cambria;
     }
     .roundnav li{
         list-style-type:none;
+   background-color: aqua;
+        width:auto;
+        padding-right: 80px;
+        border-radius: 20px;
+        height:30px;
+      
+        
     }
-.roundnav:nth-child(n){
-background-color: white;
-margin-left: 300px;
-
-}
