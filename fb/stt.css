@@ -3,6 +3,7 @@
 
 
 }
+
 .top{
     display:grid;
    grid-template-columns: 50px 350px 680px 100px;
@@ -27,6 +28,7 @@ top:5px;
 z-index:3;
 transition:0.5s;
 }
+
 .top input:focus{
     transform: translate(-20px);
     width:270px;
@@ -61,6 +63,17 @@ column-gap: 80px;
     position: relative;
     top:8px;
     height:50px;
+}
+.icons i:hover{
+    background-color: rgb(116, 116, 116,0.3);
+    width:120px;
+    border-radius: 8px;
+    position: relative;
+    left:-40px;
+    padding-left:40px;
+    top:-10px;
+    padding-top: 10px;
+
 }
 
 .icons i:focus{
@@ -105,10 +118,12 @@ transition: 300ms;
   
     color:rgb(226, 226, 226);
 }
+
 .left-side{
 position: fixed;
 display: grid;
-row-gap: 10px;
+
+row-gap: 20px;
 top:80px;
 left:15px;
 
