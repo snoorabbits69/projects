@@ -7,8 +7,8 @@ setInterval(function(){
      document.getElementById("hours").innerHTML=b.getHours();
   }
 
-    if(b.getMinutes<10){
-   document.getElementById("min").innerHTML="0"+b.getMinutes();
+    if(b.getMinutes()<10){
+   document.getElementById("min").innerHTML="0" +b.getMinutes();
   }
   else{
    document.getElementById("min").innerHTML=b.getMinutes();
