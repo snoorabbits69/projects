@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+body{
+    overflow-x: hidden;
+    background:white;
+    min-height: 100vh;
+}
+header{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    padding:30px 100px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    z-index:1000;
+}
+.logo{
+    color:black;
+    font-weight:800;
+    font-size:2em;
+    text-decoration:none;
+}
+.logo:hover{
+    opacity:0.6;
+}
+.nav{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:40px;
+}
+.nav li{
+    list-style: none;
+}
+.nav li a{
+    text-decoration:none;
+    padding:6px 15px;
+    color:black;
+    border-radius:25px;
+}
+.nav li a:hover,.nav li a.active{
+    background:black;
+color:white;
+}
+.parallel{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+.parallel img{
+    position:absolute;
+    bottom:0;
+    left:0;
+    width:100%;
+}
+#text{
+    position:absolute;
+    top:50%;
+    font-family: 'Lobster', cursive;
+
+
+    transform:translateY(-50%);
+    font-size:5em;
+    color:black;
+}
+.sec{
+    position:relative;
+    padding:100px;
+    background:#112434;
+}
+.sec h2{
+    color:white;
+    font: size 3em;
+    margin-bottom:10px;
+}
+.sec p{
+    font-size:1em;
+    color:white;
+    font-weight:500px;
+}
