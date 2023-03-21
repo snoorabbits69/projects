@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+  <div class="box">
+    <label>Your Name:<br><input type="text" id="name"></label>
+    <label>Select Password Strength:<br>
+      <select id="drop">
+        <option>weak</option>
+        <option>mid</option>
+        <option>strong</option>
+      </select>
+    </label>
+
+  <label>Character Limit:<p id="val"></p><br><input type="range" id="limiter" min=8 max=30 value=8></label>
+   
+
+    <label>Password:<br><input type="text" id="pass" readonly autocomplete="true"></label>
+    <button id="btn">Generate</button>
+  </div>
+
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
