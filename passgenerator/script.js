@@ -64,8 +64,11 @@ ob.strongpass();
   else if(drop.value=="mid"){
 ob.midpass();
   }
-  else{
+  else if(drop.value="weak"){
     ob.weakpass();
+  }
+  else{
+  alert("select the type of password");
   }
 }
           ,50
