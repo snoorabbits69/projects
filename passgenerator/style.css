@@ -20,18 +20,16 @@ margin:0;
   row-gap:20px;
 }
 #name{
-  width:40vw;
-  height:5vh;
+  
   text-align:center;
   transition:all 0.2s;
 }
 #name:focus{
-  height:6vh;
-  width:40.5vw;
+  
 outline-color:pink;
 }
 #pass{
-  width:40vw;
+  
   text-align:center;
 }
 
@@ -42,7 +40,6 @@ left:auto;
   margin:0;
 }
 #pass{
-   width:40vw;
-  height:5vh;
+ 
   text-align:center;
 }
