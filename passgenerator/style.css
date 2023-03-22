@@ -1,69 +1,48 @@
 html {
-    height: 100%;
-    width: 100%;
-  }
-  #drop{
-    width:20vw;
-    height:5vh;
-    text-align: center;
-    font-size:15px;
-    transition:all 0.2s;
-  }
-  #drop:hover{
-    width:20.5vw;
-    height:5.5vh;
-  }
-  
-  #limiter{
-    width:20vw;
-    height:5vw;
+  height: 100%;
+  width: 100%;
+}
+body{
+  background-image:url('https://media0.giphy.com/media/xT0GqcCJJJH12hJvGM/giphy.gif?cid=ecf05e4782tvijudrftdhjs4gtkuvlf97t7amkuq2lsiop5p&rid=giphy.gif&ct=g');
+  background-size: contain;
+}
+
+#limiter{
+  width:20vw;
+  height:5vw;
+margin:0;
+}
+.box{
+  display:grid;
+  background-color: (0,0,0);
+  justify-content: center;
+  align-items: center;
+  row-gap:20px;
+}
+#name{
+  width:40vw;
+  height:5vh;
+  text-align:center;
+  transition:all 0.2s;
+}
+#name:focus{
+  height:6vh;
+  width:40.5vw;
+outline-color:pink;
+}
+#pass{
+  width:40vw;
+  text-align:center;
+}
+
+#val{
+  position: relative;
+  display:inline;
+left:auto;
   margin:0;
-  }
-  .box{
-    display:grid;
-    
-    justify-content: center;
-    align-items: center;
-    row-gap:20px;
-  }
-  #name{
-    width:40vw;
-    height:5vh;
-    text-align:center;
-    transition:all 0.2s;
-  }
-  #name:focus{
-    height:6vh;
-    width:40.5vw;
-  outline-color:pink;
-  }
-  #pass{
-    width:40vw;
-    text-align:center;
-  }
-  #btn{
-    width:20vw;
-    height:5vh;
-  transition: all 0.3s;
-  }
-  #val{
-    position: relative;
-    display:inline;
-  left:auto;
-    margin:0;
-  }
-  #pass{
-     width:40vw;
-    height:5vh;
-    text-align:center;
-  }
-  #btn:hover{
-    background: #73a8bf;
-    animation-name:king;
-    animation-duration:0.5s;
-    animation-fill-mode: forwards;
-  }
-  @keyframes king{
-    from{border-radius:2px;}
-    to{border-radius:400px;}
-  }
+}
+#pass{
+   width:40vw;
+  height:5vh;
+  text-align:center;
+}
