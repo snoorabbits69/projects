@@ -156,15 +156,9 @@ bigplay.classList.add('fa-circle-play');
   audioelement.duration=0;
  })
  setInterval(()=>{
-    let i=1;
-if(Index==0 && audioelement.ended){   
-   
-        console.log("end");
-        audioelement.src=`songs/${i}.mp3`;
-        audioelement.play();
-        i++;
-    }
-    else if(Index>0 && audioelement.ended){
+    
+
+    if(audioelement.ended){
 console.log('another');
 audioelement.src=`songs/${Index+1}.mp3`;
 audioelement.play();
