@@ -109,7 +109,7 @@ songplay.forEach((e) => {
       audioelement.duration = 0;
       gif.style.opacity = 1;  
       if(Index>1){
-  change.innerHTML = songs[Index].songname;
+  change.innerHTML = songs[Index-1].songname;
       }
       else{
        change.innerHTML = songs[0].songname; 
