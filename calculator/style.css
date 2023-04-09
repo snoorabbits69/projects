@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Anton&display=swap');
+*{
+  box-sizing: border-box;
+  margin:0;
+  font-family: 'Alkatra', cursive;
+  font-family: 'Anton', sans-serif;
+
+}
+#intro{
+  font-size:40px;
+  position: relative;
+left:35vw;
+
+width:400px;
+}
+
+#intro::before{
+  content:" ";
+  position: absolute;
+  width:100%;
+  height:100%;
+  background-color: white;
+  border-left-style: solid;
+animation:typing 1.5s steps(20) infinite;
+}
+@keyframes typing{
+from{left:0px;}
+to{left:100%;}
+}
+#box{
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+    row-gap:2px;
+  margin-left:35%;
+  margin-top:1.5vh;
+
+  padding:10px;
+background-image:url('back.gif');
+  width:400px;
+  height:600px;
+box-shadow:1px 2px 2px 3px rgb(0, 0, 0);
+position:absolute;
+z-index:3;
+  
+  }
+  
+  #output{
+    grid-column:1/5;
+    width:380px;
+    height:80px;
+    font-size: 50px;
+    color:white;
+    border-top-style:none;
+    border-right-style: none;
+    border-left-style: none;
+    background-color: black;
+    border-bottom: solid 0.5px rgb(60, 59, 59);
+
+
+    text-align: end;
+    transition:all 0.2s;
+}
+  
+  .input{
+    height:80px;
+    width:80px;
+    font-size:50px;
+    background:rgb(38, 38, 38,0.4);
+    color:white;
+    text-align: center;
+/* border:none;
+    border-radius: 80%; */
+  }
+  .input:hover{
+opacity: 0.4;
+  }
+  
