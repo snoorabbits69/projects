@@ -8,7 +8,8 @@ input.forEach((e)=>{e.addEventListener('click',
 ()=>{
     if(e.value=='='){
 out=eval(out);
-output.value=out;
+
+output.value=out+0;
     }
     else if(e.value=='ac'){
         out=" ";
