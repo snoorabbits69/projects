@@ -1,3 +1,16 @@
+let users=[];
+let show=document.getElementById('show');
+let search=document.querySelector('.search');
+show.addEventListener('click',()=>{
+  search.classList.toggle('show');
+                                  })
+search.addEventListener('input',(e)=>{
+  let value=e.target.value.toLowerCase();
+  users.forEach((user)=>{
+    let visible=user.songname.toLowerCase().includes(value)||user.animename.toLowerCase().includes(value);
+    user.element.classList.toggle('hide',!visible);
+  })
+})
 for (let i = 1; i <= 11; i++) {
   let a = document.createElement('div');
   a.classList.add('songitem');
@@ -29,9 +42,9 @@ heart.addEventListener('click', () => {
 })
 
 let songs = [
-  { songname: "unravel", filepath: "songs/1.mp3", animename: "TokyoGhoul", coverpath: "cover/1.jpg" },
+  { songname: "unravel", filepath: "songs/1.mp3", animename: "Tokyo Ghoul", coverpath: "cover/1.jpg" },
   { songname: "Opening 1", filepath: "songs/2.mp3", animename: "Death Note", coverpath: "cover/2.jpg" },
-  { songname: "Tank ", filepath: "songs/3.mp3", animename: "CowboyBepop", coverpath: "cover/3.jpg" },
+  { songname: "Tank ", filepath: "songs/3.mp3", animename: "Cowboy Bepop", coverpath: "cover/3.jpg" },
   { songname: "Hero Come back", filepath: "songs/4.mp3", animename: "Naruto", coverpath: "cover/4.jpg" },
   { songname: "Kick Back", filepath: "songs/5.mp3", animename: "Chainsaw-man", coverpath: "cover/5.jpg" },
   { songname: "Rumbling", filepath: "songs/6.mp3", animename: "Attack on Titan", coverpath: "cover/6.jpg" },
@@ -76,10 +89,13 @@ for (i = 0; i < 2; i++) {
     }
   })
 }
-songitem.forEach((element, i) => {
+
+
+users=songitem.map((element, i) => {
   element.getElementsByTagName("img")[0].src = songs[i].coverpath;
   element.getElementsByClassName("songname")[0].innerHTML = songs[i].songname;
   element.getElementsByClassName("animename")[0].innerHTML = songs[i].animename;
+  return{songname:songs[i].songname,animename:songs[i].animename,element:element}
 })
 audioelement.addEventListener('timeupdate', () => {
   console.log("tt");
