@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Anton&display=swap');
 body{
     background-color:rgb(0, 0, 0);
+  z-index:50;
 }
 *{
     margin:0;
@@ -228,12 +229,19 @@ grid-template-columns: repeat(3,1fr);
 .search{
     position: absolute;
     top:33%;
-    left:40%;
-width:auto;
+    left:5%;
+width:80px;
 border-radius:12px;
 display:none;
+animation:focusing 0.3s ease-out forwards; 
 }
-.fa-magnifying-glass:hover
-{
-    color:Red;
+@keyframes focusing{
+  to{width:150px;}
+}
+.show{
+  display:block;
+  }
+
+.hide{
+  display:none;
 }
