@@ -1,71 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spotify</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="mobile.css">
-<link rel="icon" href="logo.svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="icon" href="spot.png">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Spotify</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="mobile.css">
+  <link rel="icon" href="logo.svg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="icon" href="spot.png">
 </head>
+
 <body>
-    
-    <nav id="sidebar">
-        <ul>
-            <li><i class="fa-brands fa-spotify"></i><span>spotify</span></li>
-            <li><i class="fa-solid fa-house"></i><span>Home</span></li>
-            <li><i class="fa-solid fa-magnifying-glass"></i><span>search</span></li>
-            <input type="text" class="search">
-            <li><i class="fa-solid fa-layer-group"></i> <span>Libraries</span></li>
-            </ul>
-        </nav>
-<nav id="head">
+
+  <nav id="sidebar">
     <ul>
-    <li><div class="cover"></div></li>
-        <li class="toptext">ANIME SONGS PLAYLIST</li>
-       <li class="owner"><div class="ownlog"></div><span> Created By snoorabbits . 2023 . 10songs</span></li>
-        </ul>
-    </nav>
-    <nav id="top">
-        <div id="buttons">
-        <i class="fa-solid fa-circle-play click" id="play" ></i>
-        <i class="fa-solid fa-heart heart "id="hear"></i>
-        </div>
-        <section>
-            <div>title</div>
-            <div>Name</div>
-            <div>Anime-Name</div>
-            
-        </section>
-        </nav>
-    
-     
-    <div class="contain">
-       
+      <li><i class="fa-brands fa-spotify"></i><span>spotify</span></li>
+      <li><i class="fa-solid fa-house"></i><span>Home</span></li>
+      <li id="show"><i class="fa-solid fa-magnifying-glass"></i><span> search</span></li>
+      <input type="search" class="search">
+      <li><i class="fa-solid fa-layer-group"></i> <span>Libraries</span></li>
+    </ul>
+  </nav>
+  <nav id="head">
+    <ul>
+      <li>
+        <div class="cover"></div>
+      </li>
+      <li class="toptext">ANIME SONGS PLAYLIST</li>
+      <li class="owner">
+        <div class="ownlog"></div><span> Created By snoorabbits . 2023 . 10songs</span>
+      </li>
+    </ul>
+  </nav>
+  <nav id="top">
+    <div id="buttons">
+      <i class="fa-solid fa-circle-play click" id="play"></i>
+      <i class="fa-solid fa-heart heart " id="hear"></i>
+    </div>
+    <section>
+      <div>title</div>
+      <div>Name</div>
+      <div>Anime-Name</div>
+
+    </section>
+  </nav>
+
+
+  <div class="contain">
+
     <div class="songlist">
 
-   <div class="songitemlist">
-     
+      <div class="songitemlist">
+
       </div>
-    <div class="songBanner"></div>
+      <div class="songBanner"></div>
     </div>
-    </div>
-    <div class="bottom">
-        <input type="range" id="progress" min=0 max=100 value=0>
+  </div>
+  <div class="bottom">
+    <input type="range" id="progress" min=0 max=100 value=0>
     <div id="icons">
-        <i class="fas  fa-step-backward design" id="previous"></i>
-        <i class="fa-solid fa-play design click" id="masterplay" ></i>
-        <i class="fas  fa-step-forward design" id="forward"></i>
-        </div>    
-        <div class="songinfo">
-            <img src="playing.gif" width="50px" id="gif"><span id="change"> unravel</span>
-        </div>
+      <i class="fas  fa-step-backward design" id="previous"></i>
+      <i class="fa-solid fa-play design click" id="masterplay"></i>
+      <i class="fas  fa-step-forward design" id="forward"></i>
     </div>
-    <script  src="script.js"></script>
+    <div class="songinfo">
+      <img src="playing.gif" width="50px" id="gif"> <span id="current">Unravel</span>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>
