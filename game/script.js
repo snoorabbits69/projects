@@ -48,10 +48,6 @@ class Player{
         if(this.position.y+this.velocity.y+this.height<canvas.height){
         this.velocity.y+=gravity;
         }
-        else{
-            this.velocity.y=0;
-        }
-        
         
     }
 }
@@ -72,7 +68,7 @@ this.height=image.height;
 
 const player=new Player();
 
-const platforms=[new Platform(10,460,image),new Platform(image.width,460,image)];
+const platforms=[new Platform(10,460,image),new Platform(image.width,460,image),new Platform(image.width*2.3,460,image)];
 console.log(image.width);
 
 function createimg(imagesrc){
@@ -142,6 +138,9 @@ platforms.forEach(platform=>{
     }
 if(movement>4000){
     console.log("You did it");
+}
+if(player.position.y>canvas.height){
+  console.log("400");
 }
   }
   platforms.forEach(platform=>{
