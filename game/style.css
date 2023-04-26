@@ -1,7 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500&family=Anton&family=Bruno+Ace&display=swap');
 body{
     margin:0;
     background-color: black;
     display:flex;
     justify-content: center;
     align-items: center;
+}
+#win{
+    color:white;
+    position:absolute;
+left:900px;
+top:500px;
+font-size:40px;
+font-family: 'Bruno Ace', cursive;
+animation:winning forwards 1s ease-in; 
+}
+@keyframes winning{
+    from{
+        color:red;
+        bottom:500px;
+    }
+    to{
+        color:blue;
+        top:200px;
+    }
+}
+.hide{
+    display:none;
 }

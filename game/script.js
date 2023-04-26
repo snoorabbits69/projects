@@ -1,3 +1,4 @@
+let win=document.getElementById('win');
 let images = {
   hills: "../image/hills.png",
   background: "../image/background.png",
@@ -7,6 +8,8 @@ let images = {
   spritestandright:"../image/spriteStandRight.png",
   spritestandleft:"../image/spriteStandLeft.png"
 }
+let audio=new Audio();
+
 let currentkey;
 let smallplatform = new Image();
 smallplatform.src = images.smallplatform;
@@ -206,15 +209,18 @@ player.width=player.sprite.run.width;
     player.width=player.sprite.run.width;
      
        }
-    
-   
-      if (movement > 4000) {
-        console.log("You did it");
-      }
+    if(movement>=1934){
+      win.classList.remove('hide');
+    }
+      
+      
       if (player.position.y > canvas.height) {
         death = 400;
-        console.log(death);
+        audio.src="death.mp3";
+        win.classList.add('hide');
+     audio.play();
         init();
+
       }
     }
     platforms.forEach(platform => {
@@ -330,6 +336,4 @@ player.width=player.sprite.stand.width;
 image.addEventListener('load', () => {
   game();
 });
-
-
 
